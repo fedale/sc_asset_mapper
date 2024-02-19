@@ -41,4 +41,7 @@ return [
     'debounce' => [
         'version' => '2.0.0',
     ],
+    'turbo-view-transitions' => [
+        'version' => '0.3.0',
+    ],
 ];
