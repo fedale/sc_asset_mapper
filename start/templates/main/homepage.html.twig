@@ -29,7 +29,7 @@
     <div class="flex">
         <aside class="hidden md:block md:w-64 bg-gray-900 px-2 py-6">
             <h2 class="text-xl text-white font-semibold mb-6 px-2">Planets</h2>
-            <turbo-frame id="planet-dash-info" target="_top">
+            <turbo-frame id="planet-info" target="_top">
                 {{ include('main/_planet_list.html.twig') }}
             </turbo-frame>
         </aside>
@@ -110,6 +110,7 @@
                                                     loading="lazy"
                                                     id="panet-card-{{ voyage.planet.id }}"
                                                     src="{{ path('app_planet_show_card', { id: voyage.planet.id }) }}"
+                                                    data-skip-transition
                                             >
                                             <div class="p-10">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-loader-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3a9 9 0 1 0 9 9" /></svg>

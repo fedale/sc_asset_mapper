@@ -6432,12 +6432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyCasts/tailwind-bundle.git",
-                "reference": "3f08a09c9a44088c417c654dcaebeab9e1fa335a"
+                "reference": "e13e544c9d0f293c3155d34c6121dcf15a827867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyCasts/tailwind-bundle/zipball/3f08a09c9a44088c417c654dcaebeab9e1fa335a",
-                "reference": "3f08a09c9a44088c417c654dcaebeab9e1fa335a",
+                "url": "https://api.github.com/repos/SymfonyCasts/tailwind-bundle/zipball/e13e544c9d0f293c3155d34c6121dcf15a827867",
+                "reference": "e13e544c9d0f293c3155d34c6121dcf15a827867",
                 "shasum": ""
             },
             "require": {
@@ -6477,9 +6477,9 @@
             ],
             "support": {
                 "issues": "https://github.com/SymfonyCasts/tailwind-bundle/issues",
-                "source": "https://github.com/SymfonyCasts/tailwind-bundle/tree/main"
+                "source": "https://github.com/SymfonyCasts/tailwind-bundle/tree/v0.5.1"
             },
-            "time": "2023-12-21T12:44:21+00:00"
+            "time": "2024-02-20T11:53:29+00:00"
         },
         {
             "name": "tales-from-a-dev/flowbite-bundle",
