@@ -7501,7 +7501,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "babdev/pagerfanta-bundle": 20,
         "knplabs/knp-time-bundle": 20,
         "pagerfanta/doctrine-orm-adapter": 20,
         "pagerfanta/twig": 20,
@@ -7531,5 +7530,5 @@
         "ext-iconv": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.6.0"
 }
