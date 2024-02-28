@@ -52,7 +52,9 @@
                     data-action="autosubmit#debouncedSubmit"
                     autofocues
                 >
-                <div class="whitespace-nowrap m-2 mr-4">{{ voyages|length }} results</div>
+                {% block result_count %}
+                    <div id="voyage-result-count" class="whitespace-nowrap m-2 mr-4">{{ voyages|length }} results</div>
+                {% endblock %}
             </form>
             <turbo-frame 
                 id="voyage-list" 
@@ -127,6 +129,11 @@
                         </tbody>
                     </table>
                 </div>
+                <turbo-stream action="replace" target="voyage-result-count">
+                    <template>
+                        {{ block('result_count') }}
+                    </template>
+                </turbo-stream>
             </turbo-frame>
             <div class="flex items-center mt-6 space-x-4">
             {% if voyages.hasPreviousPage %}
