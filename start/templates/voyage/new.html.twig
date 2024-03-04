@@ -21,3 +21,11 @@
         {{ include('voyage/_form.html.twig') }}
     </div>
 {% endblock %}
+
+{% block stream_success %}
+    <turbo-stream action="prepend" targets="#voyage-list tbody">
+        <template>
+            <tr><td>{{ include('voyage/_row.html.twig') }}</td></tr>
+        </template>
+    </turbo-stream>
+{% endblock %}
