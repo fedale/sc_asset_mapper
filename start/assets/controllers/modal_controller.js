@@ -1,7 +1,7 @@
 import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
-  static targets = ['dialog', 'dynamicContent', 'loadingContent'];
+  static targets = ['dialog', 'dynamicContent', 'loadingTemplate'];
 
   observer = null;
     connect() {
@@ -22,6 +22,7 @@ export default class extends Controller {
             });
         }
     }
+
     disconnect() {
         if (this.observer) {
             this.observer.disconnect();
@@ -55,7 +56,7 @@ export default class extends Controller {
         return;
     }
 
-    this.dynamicContentTarget.innerHTML = this.loadingContentTarget.innerHTML;
+    this.dynamicContentTarget.innerHTML = this.loadingTemplateTarget.innerHTML;
   }
 
 }
