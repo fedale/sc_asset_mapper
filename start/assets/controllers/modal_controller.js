@@ -5,6 +5,7 @@ export default class extends Controller {
 
   observer = null;
     connect() {
+      
         if (this.hasDynamicContentTarget) {
             // when the content changes, call this.open()
             this.observer = new MutationObserver(() => {
